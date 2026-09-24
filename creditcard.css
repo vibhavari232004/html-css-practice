@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: gainsboro;
+}
+.card{
+    width: 570px;
+    height: 360px;
+    background: linear-gradient(to left,purple,red);
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+    position: relative;
+    box-shadow: 0 10px 20px rgb(49, 47, 47);
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top h3{
+    font-size: 25px;
+}
+.top h2{
+    letter-spacing: 4px;
+}
+.chip{
+    background: gold;
+    width: 69px;
+    height: 45px;
+    border-radius: 8px;
+    margin-top: 35px;
+}
+.number{
+    margin-top: 25px;
+    font-size: 34px;
+    letter-spacing: 5px;
+    font-family: monospace;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.bottom h4{
+    margin-top: 5px;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+.label{
+    font-size: 13px;
+    color: white;
+}
+.logo{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 35px;
+    background: silver;
+    border-radius: 7px;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    width: 120px;
+    height: 455px;
+    background: rgb(255,255,255,0.08);
+    transform: rotate(25deg);
+}
+.card::after{
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 90px;
+    width: 60px;
+    height: 452px;
+    background: rgb(255,255,255,0.06);
+    transform: rotate(25deg);
+}
