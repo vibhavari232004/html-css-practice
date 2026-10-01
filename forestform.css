@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-image: url('https://english.cdn.zeenews.com/sites/default/files/2025/06/25/1778592-flowersheadline.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+.logo h1{
+    color: azure;
+    font-size: 40px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 21px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: lightseagreen;
+}
+.login-btn{
+    width: 120px;
+    height: 45px;
+    background: transparent;
+    color: azure;
+    border: 2px solid ghostwhite;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background: whitesmoke;
+    color: black;
+}
+.main{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box{
+    width: 380px;
+    padding: 40px;
+    background: rgb(255,255,255,0.4);
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 20px wheat;
+    backdrop-filter: blur(20px);
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: red;
+    color: azure;
+    border-radius: 0 18px 0 18px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.login-box h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.input-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+.input-box input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: transparent;
+    color: rgb(14, 12, 12);
+    font-size: 19px;
+    padding-right: 30px;
+}
+.input-box input::placeholder{
+    color: black;
+}
+.input-box i{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    font-size: 20px;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.remember a{
+    text-decoration: none;
+    color: black;
+}
+.submit-btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: black;
+    color: azure;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.submit-btn:hover{
+    background: rgb(49, 73, 97);
+    color: rgb(10, 10, 10);
+}
+.register{
+    text-align: center;
+    margin-top: 20px;
+}
+.register a{
+    text-decoration: none;
+}
